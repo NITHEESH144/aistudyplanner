@@ -133,8 +133,8 @@ export default function ChatArea() {
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your question or upload study materials..."
-              className="w-full bg-transparent resize-none outline-none text-gray-800 placeholder-gray-500"
-              rows={1}
+              className="w-full bg-transparent resize-none outline-none text-gray-800 placeholder-gray-500 text-base"
+              rows={2}
             />
           </div>
           <motion.button
