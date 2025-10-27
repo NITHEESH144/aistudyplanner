@@ -61,8 +61,8 @@ export default function ChatArea() {
   };
 
   return (
-    <div className="flex-1 flex flex-col h-screen bg-gray-50">
-      <div className="bg-white border-b border-gray-200 px-6 py-4">
+    <div className="flex-1 flex flex-col h-screen bg-gray-50 overflow-hidden">
+      <div className="bg-white border-b border-gray-200 px-6 py-4 flex-shrink-0">
         <h2 className="text-xl font-semibold text-gray-800">Study Assistant</h2>
         <p className="text-sm text-gray-500">Ask questions about your study materials</p>
       </div>
@@ -122,7 +122,7 @@ export default function ChatArea() {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="bg-white border-t border-gray-200 px-6 py-4">
+      <div className="bg-white border-t border-gray-200 px-6 py-4 flex-shrink-0">
         <div className="flex items-end space-x-3">
           <button className="p-3 text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all">
             <Paperclip className="w-5 h-5" />
